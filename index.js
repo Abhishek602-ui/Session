@@ -11,7 +11,7 @@ const {dummydata} = require('./dummy');
 //  Blog.create(dummydata)
 const path = require('path');
 
-mongoose.connect('mongodb://127.0.0.1:27017/practice')
+mongoose.connect('mongodb+srv://Abhishek-Porwal:Fwr3AL6bxDUNxxX9@cluster0.868ebly.mongodb.net/global-blogs')
     .then(() => { console.log({ sucess: true }) })
     .catch((err) => { console.log(err) })
 
@@ -54,7 +54,7 @@ app.get('/', async(req, res) => {
     }
 
     
-
+    
     
     
     res.status(200).render('home',{blogs});
